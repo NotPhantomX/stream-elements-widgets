@@ -284,18 +284,22 @@
   },  
   "widgetName": {
     "type": "hidden",
-    "value": "Custom Chat"
+    "value": "Custom Chat",
+    "group": "Configurations"
   },
   "widgetAuthor": {
     "type": "hidden",
-    "value": "NaoPhantomX"
+    "value": "NaoPhantomX",
+    "group": "Configurations"
   },
   "widgetVersion": {
     "type": "hidden",
-    "value": "1.0"
+    "value": "1.1",
+    "group": "Configurations"
   },
   "widgetUpdateUrl": {
     "type": "hidden",
-    "value": "https://github.com/NotPhantomX/stream-elements-widgets/blob/main/CustomChat/"
+    "value": "https://github.com/NotPhantomX/stream-elements-widgets/blob/main/CustomChat/",
+    "group": "Configurations"
   }
 }
