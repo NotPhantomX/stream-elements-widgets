@@ -296,6 +296,6 @@
   },
   "widgetUpdateUrl": {
     "type": "hidden",
-    "value": "https://github.com/NotPhantomX/stream-elements-widgets/blob/main"
+    "value": "https://github.com/NotPhantomX/stream-elements-widgets/blob/main/CustomChat/"
   }
 }
