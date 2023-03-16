@@ -205,7 +205,9 @@ function addMessage(username, message, badges, userId, msgId, color, isAction) {
     : '';
 
   const element = $(`
-    <div data-from"${userId}" data-id="${msgId}" class="message-row ${animationIn} animated" id="msg-${totalMessages}">
+    <div data-from"${userId}" data-id="${msgId}" class="message-row ${String(
+    animationIn,
+  )} animate_animated" id="msg-${totalMessages}">
       <div class="meta" style="background-color: ${cardColor}">
         <div class="badges">${badges}</div>
         <div class="name" style="color: ${aUserColor}">${username}</div>
@@ -226,7 +228,7 @@ function addMessage(username, message, badges, userId, msgId, color, isAction) {
 
   if (hideAfter !== 0) {
     setTimeout(() => {
-      element.removeClass(animationIn).addClass(animationOut);
+      element.removeClass(animationIn).addClass(String(animationOut));
       setTimeout(() => {
         element.remove();
       }, 1000);
@@ -239,32 +241,38 @@ function addMessage(username, message, badges, userId, msgId, color, isAction) {
 }
 
 function attachEmotes(message) {
-  let text = html_encode(message.text);
-  let data = message.emotes;
+  let text = htmlEncode(message.text);
+  let { emotes } = message;
   const media = message.attachment?.media?.image?.src;
 
   if (media) {
-    text = `${message.text}<img src="${media}">`;
+    return `${text}<img src="${media}">`;
   }
 
-  return text.replace(/\S+/gi, (key) => {
-    const result = data.find((emote) => emote.name === key);
+  const regex = /\S+/gi;
 
-    if (result) {
-      const msgSize = messageSize + 5;
-      const url = result.urls[4];
+  return text.replace(regex, (key) => {
+    const hasEmote = emotes.some((emote) => emote.name === key);
+
+    if (hasEmote) {
+      const {
+        urls,
+        coords = { x: 0, y: 0 },
+        width,
+        height,
+      } = emotes.find((emote) => emote.name === key);
+      const x = parseInt(coords.x);
+      const y = parseInt(coords.y);
+      const size = `width: ${width ? `${width}px` : 'auto'}; height: ${
+        height ? `${height}px` : 'auto'
+      };`;
 
       if (provider === 'twitch') {
-        return `<img width="${msgSize}" class="emote" src="${url}"/>`;
+        return `<img width="${messageSize + 5}" class="emote" src="${
+          urls[4]
+        }"/>`;
       } else {
-        const { coords = { x: 0, y: 0 }, width, height } = result;
-        const x = parseInt(coords.x);
-        const y = parseInt(coords.y);
-        const size = `width: ${width ? `${width}px` : 'auto'}; height: ${
-          height ? `${height}px` : 'auto'
-        };`;
-
-        return `<div class="emote" style="display: inline-block; background-image: url(${url}); background-position: -${x}px -${y}px; ${size}"></div>`;
+        return `<div class="emote" style="display: inline-block; background-image: url(${urls[4]}); background-position: -${x}px -${y}px; ${size}"></div>`;
       }
     }
 
@@ -272,7 +280,7 @@ function attachEmotes(message) {
   });
 }
 
-function html_encode(str) {
+function htmlEncode(str) {
   const el = document.createElement('textarea');
   el.innerHTML = str;
   return el.value;
@@ -280,31 +288,25 @@ function html_encode(str) {
 
 function removeRow() {
   const elementToRemove = $(removeSelector);
-  if (!elementToRemove.length) {
-    return;
-  }
-  if (animationOut !== 'none' || !elementToRemove.hasClass(animationOut)) {
-    if (hideAfter !== 0) {
-      elementToRemove.dequeue();
-    } else {
-      elementToRemove
-        .addClass(animationOut)
-        .delay(1000)
-        .queue(() => {
-          $(this).remove().dequeue();
-        });
-    }
-    return;
+  if (elementToRemove.length === 0) return;
+
+  elementToRemove.stop();
+
+  if (elementToRemove.is(animationIn)) {
+    elementToRemove.removeClass(animationIn);
   }
 
-  elementToRemove.animate(
-    {
-      height: 0,
-      opacity: 0,
-    },
-    'slow',
-    () => {
+  if (animationOut !== 'none' || !elementToRemove.is(animationOut)) {
+    if (hideAfter !== 0) {
+      elementToRemove.finish();
+    } else {
+      elementToRemove.addClass(animationOut).one('animationend', () => {
+        elementToRemove.remove();
+      });
+    }
+  } else {
+    elementToRemove.animate({ height: 0, opacity: 0 }, 'slow', () => {
       elementToRemove.remove();
-    },
-  );
+    });
+  }
 }

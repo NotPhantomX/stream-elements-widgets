@@ -1,305 +1,305 @@
-{
-  "testMessage": {
-    "type": "button",
-    "label": "Test Message",
-    "value": "Test Message",
-    "group": "Test"
-  },
-  "showTopDegrade": {
-    "label": "Show Upper Gradient:",
-    "type": "dropdown",
-    "value": "inline-block",
-    "options": {
-      "none": "No",
-      "inline-block": "Yes"
+  {
+    "testMessage": {
+      "type": "button",
+      "label": "Test Message",
+      "value": "Test Message",
+      "group": "Test"
     },
-    "group": "Customization"
-  },
-  "showBottomDegrade": {
-    "label": "Show Bottom Gradient:",
-    "type": "dropdown",
-    "value": "inline-block",
-    "options": {
-      "none": "No",
-      "inline-block": "Yes"
+    "showTopDegrade": {
+      "label": "Show Upper Gradient:",
+      "type": "dropdown",
+      "value": "inline-block",
+      "options": {
+        "none": "No",
+        "inline-block": "Yes"
+      },
+      "group": "Customization"
     },
-    "group": "Customization"
-  },
-  "msgBorderColorUser": {
-    "label": "Border Color Based on User",
-    "type": "checkbox",
-    "value": true,
-    "group": "Customization"
-  },
-  "msgBorderColor": {
-    "type": "colorpicker",
-    "label": "Message Border Color:",
-    "value": "#ffd539",    
-    "group": "Customization"
-  },
-  	"msgOptCardColorUser": {
-    	"label": "Card Color User Based",
+    "showBottomDegrade": {
+      "label": "Show Bottom Gradient:",
+      "type": "dropdown",
+      "value": "inline-block",
+      "options": {
+        "none": "No",
+        "inline-block": "Yes"
+      },
+      "group": "Customization"
+    },
+    "msgBorderColorUser": {
+      "label": "Border Color Based on User",
       "type": "checkbox",
       "value": true,
       "group": "Customization"
     },
-    "msgCardColorUser": {
-        "type": "colorpicker",
-        "label": "User Card Color:",
-        "value": "#ffd539",
+    "msgBorderColor": {
+      "type": "colorpicker",
+      "label": "Message Border Color:",
+      "value": "#ffd539",    
+      "group": "Customization"
+    },
+      "msgOptCardColorUser": {
+        "label": "Card Color User Based",
+        "type": "checkbox",
+        "value": true,
         "group": "Customization"
+      },
+      "msgCardColorUser": {
+          "type": "colorpicker",
+          "label": "User Card Color:",
+          "value": "#ffd539",
+          "group": "Customization"
+      },
+    "msgBackgroundColor": {
+      "type": "colorpicker",
+      "label": "Message Background Color:",
+      "value": "rgba(0,0,0,0)",    
+      "group": "Customization"
+    }, 
+    "backgroundColor": {
+      "type": "colorpicker",
+      "label": "Chat Background Color:",
+      "value": "rgba(17,11,44,1)",
+      "group": "Customization"
     },
-  "msgBackgroundColor": {
-    "type": "colorpicker",
-    "label": "Message Background Color:",
-    "value": "rgba(0,0,0,0)",    
-    "group": "Customization"
-  }, 
-  "backgroundColor": {
-    "type": "colorpicker",
-    "label": "Chat Background Color:",
-    "value": "rgba(17,11,44,1)",
-    "group": "Customization"
-  },
-  "timeStamp": {
-    "label": "Show Time Date Stamp",
-    "type": "checkbox",
-    "value": false,
-    "group": "Customization"
-  },
-    "localTimeStamp": {
-        "label": "Time Location:",
-        "type": "dropdown",
-        "value": "left",
-        "options": {
-            "left": "Left",
-            "center": "Center",
-            "right": "Right",
-          "justify": "Justify"
-        },
-        "group": "Customization"
+    "timeStamp": {
+      "label": "Show Time Date Stamp",
+      "type": "checkbox",
+      "value": false,
+      "group": "Customization"
     },
-  "font": {
-    "type": "googleFont",
-    "label": "Font:",
-    "value": "Roboto",
-    "group": "Font"
-  }, 
-  "messageColor": {
-    "type": "colorpicker",
-    "label": "Message Color:",
-    "value": "#fff",
-    "group": "Font"
-  },
-  "autoUserColor": {
-  	"label": "Auto User Name Color?",
-    "type": "checkbox",
-    "value": true,
-    "group": "Font"
-  },
-  "userColor": {
-    "type": "colorpicker",
-    "label": "User Color:",
-    "value": "#fff",
-    "group": "Font"
-  },
-  "fontSize": {
-    "label": "Font Size:",
-    "type": "dropdown",
-    "value": "700",
-    "options": {
-      "100": "Fine (100)",
-      "300": "Soft (300)",
-      "400": "Regular (400)",
-      "500": "Medium (500)",
-      "700": "Bold (700)",
-      "900": "Bold Black (900)"
+      "localTimeStamp": {
+          "label": "Time Location:",
+          "type": "dropdown",
+          "value": "left",
+          "options": {
+              "left": "Left",
+              "center": "Center",
+              "right": "Right",
+            "justify": "Justify"
+          },
+          "group": "Customization"
+      },
+    "font": {
+      "type": "googleFont",
+      "label": "Font:",
+      "value": "Roboto",
+      "group": "Font"
+    }, 
+    "messageColor": {
+      "type": "colorpicker",
+      "label": "Message Color:",
+      "value": "#fff",
+      "group": "Font"
     },
-    "group": "Font"
-  },
-  "textShadow": {
-    "type": "text",
-    "label": "Text Shadow:",
-    "value": "rgb(0, 0, 0) 0px 0px 0px",
-    "group": "Font"
-  },
-  "badgeSize": {
-    "type": "slider",
-    "label": "Badges Size:",
-    "value": 24,
-    "min": 16,
-    "max": 30,
-    "step": 1,
-    "group": "Font"
-  },   
-  "usernameSize": {
-    "type": "slider",
-    "label": "Username Size:",
-    "value": 24,
-    "min": 16,
-    "max": 30,
-    "step": 1,
-    "group": "Font"
-  }, 
-  "messageSize": {
-    "type": "slider",
-    "label": "Message Size:",
-    "value": 24,
-    "min": 16,
-    "max": 30,
-    "step": 1,
-    "group": "Font"
-  },
-  "emoteSize": {
-    "type": "slider",
-    "label": "Emotes Size:",
-    "value": 24,
-    "min": 16,
-    "max": 60,
-    "step": 1,
-    "group": "Font"
-  },
-  "alignMessages": {
-    "label": "Messages Direction:",
-    "type": "dropdown",
-    "value": "position: absolute",
-    "options": {
-      "display: block": "Up to Down",
-      "position: absolute": "Down to Up"
+    "autoUserColor": {
+      "label": "Auto User Name Color?",
+      "type": "checkbox",
+      "value": true,
+      "group": "Font"
     },
-    "group": "Configurations"
-  },
-  "hideCommands": {
-  	"label": "Ignore Commands:",
-    "type": "checkbox",
-    "value": true,
-    "group": "Configurations"
-  },
-  "messagesLimit":{
-    "type": "slider",
-    "label": "Messages Limit:",    
-    "value": 0,
-    "min": 0,
-    "max": 50,
-    "step": 1,
-    "group": "Configurations"
-  },
-  "hideAfter": {
-    "type": "slider",
-    "label": "Remove msg (0 to disable):",    
-    "value": 0,
-    "min": 0,
-    "max": 60,
-    "step": 1,
-    "group": "Configurations"
-  },
-  "ignoredUsers": {
-    "label": "Ignored Users (by commas):",
-    "type": "text",
-    "value": "StreamElements,StreamLabs,NightBot",
-    "group": "Configurations"
-  },
-  "animationIn": {
-    "type": "dropdown",
-    "label": "In Animation:",
-    "value": "bounceInUp",
-    "options": {
-      "none": "None",
-      "bounceIn": "bounceIn",
-      "bounceInDown": "bounceInDown",
-      "bounceInLeft": "bounceInLeft",
-      "bounceInRight": "bounceInRight",
-      "bounceInUp": "bounceInUp",
-      "fadeIn": "fadeIn",
-      "fadeInDown": "fadeInDown",
-      "fadeInDownBig": "fadeInDownBig",
-      "fadeInLeft": "fadeInLeft",
-      "fadeInLeftBig": "fadeInLeftBig",
-      "fadeInRight": "fadeInRight",
-      "fadeInRightBig": "fadeInRightBig",
-      "fadeInUp": "fadeInUp",
-      "fadeInUpBig": "fadeInUpBig",
-      "flipInX": "flipInX",
-      "flipInY": "flipInY",
-      "lightSpeedIn": "lightSpeedIn",
-      "rotateIn": "rotateIn",
-      "rotateInDownLeft": "rotateInDownLeft",
-      "rotateInDownRight": "rotateInDownRight",
-      "rotateInUpLeft": "rotateInUpLeft",
-      "rotateInUpRight": "rotateInUpRight",
-      "slideInUp": "slideInUp",
-      "slideInDown": "slideInDown",
-      "slideInLeft": "slideInLeft",
-      "slideInRight": "slideInRight",
-      "zoomIn": "zoomIn",
-      "zoomInDown": "zoomInDown",
-      "zoomInLeft": "zoomInLeft",
-      "zoomInRight": "zoomInRight",
-      "zoomInUp": "zoomInUp",
-      "jackInTheBox": "jackInTheBox",
-      "rollIn": "rollIn"
+    "userColor": {
+      "type": "colorpicker",
+      "label": "User Color:",
+      "value": "#fff",
+      "group": "Font"
     },
-    "group": "Configurations"
-  },
-  "animationOut": {
-    "type": "dropdown",
-    "label": "Out Animation:",
-    "value": "none",
-    "options": {
-      "none": "None",
-      "bounceOut": "bounceOut",
-      "bounceOutDown": "bounceOutDown",
-      "bounceOutLeft": "bounceOutLeft",
-      "bounceOutRight": "bounceOutRight",
-      "bounceOutUp": "bounceOutUp",
-      "fadeOut": "fadeOut",
-      "fadeOutDown": "fadeOutDown",
-      "fadeOutDownBig": "fadeOutDownBig",
-      "fadeOutLeft": "fadeOutLeft",
-      "fadeOutLeftBig": "fadeOutLeftBig",
-      "fadeOutRight": "fadeOutRight",
-      "fadeOutRightBig": "fadeOutRightBig",
-      "fadeOutUp": "fadeOutUp",
-      "fadeOutUpBig": "fadeOutUpBig",
-      "flipOutX": "flipOutX",
-      "flipOutY": "flipOutY",
-      "lightSpeedOut": "lightSpeedOut",
-      "rotateOut": "rotateOut",
-      "rotateOutDownLeft": "rotateOutDownLeft",
-      "rotateOutDownRight": "rotateOutDownRight",
-      "rotateOutUpLeft": "rotateOutUpLeft",
-      "rotateOutUpRight": "rotateOutUpRight",
-      "slideOutUp": "slideOutUp",
-      "slideOutDown": "slideOutDown",
-      "slideOutLeft": "slideOutLeft",
-      "slideOutRight": "slideOutRight",
-      "zoomOut": "zoomOut",
-      "zoomOutDown": "zoomOutDown",
-      "zoomOutLeft": "zoomOutLeft",
-      "zoomOutRight": "zoomOutRight",
-      "zoomOutUp": "zoomOutUp",
-      "rollOut": "rollOut"
+    "fontSize": {
+      "label": "Font Size:",
+      "type": "dropdown",
+      "value": "700",
+      "options": {
+        "100": "Fine (100)",
+        "300": "Soft (300)",
+        "400": "Regular (400)",
+        "500": "Medium (500)",
+        "700": "Bold (700)",
+        "900": "Bold Black (900)"
+      },
+      "group": "Font"
     },
-    "group": "Configurations"
-  },  
-  "widgetName": {
-    "type": "hidden",
-    "value": "Custom Chat",
-    "group": "Configurations"
-  },
-  "widgetAuthor": {
-    "type": "hidden",
-    "value": "NaoPhantomX",
-    "group": "Configurations"
-  },
-  "widgetVersion": {
-    "type": "hidden",
-    "value": "1.1",
-    "group": "Configurations"
-  },
-  "widgetUpdateUrl": {
-    "type": "hidden",
-    "value": "https://github.com/NotPhantomX/stream-elements-widgets/blob/main/CustomChat/",
-    "group": "Configurations"
+    "textShadow": {
+      "type": "text",
+      "label": "Text Shadow:",
+      "value": "rgb(0, 0, 0) 0px 0px 0px",
+      "group": "Font"
+    },
+    "badgeSize": {
+      "type": "slider",
+      "label": "Badges Size:",
+      "value": 24,
+      "min": 16,
+      "max": 30,
+      "step": 1,
+      "group": "Font"
+    },   
+    "usernameSize": {
+      "type": "slider",
+      "label": "Username Size:",
+      "value": 24,
+      "min": 16,
+      "max": 30,
+      "step": 1,
+      "group": "Font"
+    }, 
+    "messageSize": {
+      "type": "slider",
+      "label": "Message Size:",
+      "value": 24,
+      "min": 16,
+      "max": 30,
+      "step": 1,
+      "group": "Font"
+    },
+    "emoteSize": {
+      "type": "slider",
+      "label": "Emotes Size:",
+      "value": 24,
+      "min": 16,
+      "max": 60,
+      "step": 1,
+      "group": "Font"
+    },
+    "alignMessages": {
+      "label": "Messages Direction:",
+      "type": "dropdown",
+      "value": "position: absolute",
+      "options": {
+        "display: block": "Up to Down",
+        "position: absolute": "Down to Up"
+      },
+      "group": "Configurations"
+    },
+    "hideCommands": {
+      "label": "Ignore Commands:",
+      "type": "checkbox",
+      "value": true,
+      "group": "Configurations"
+    },
+    "messagesLimit":{
+      "type": "slider",
+      "label": "Messages Limit:",    
+      "value": 0,
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "group": "Configurations"
+    },
+    "hideAfter": {
+      "type": "slider",
+      "label": "Remove msg (0 to disable):",    
+      "value": 0,
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "group": "Configurations"
+    },
+    "ignoredUsers": {
+      "label": "Ignored Users (by commas):",
+      "type": "text",
+      "value": "StreamElements,StreamLabs,NightBot",
+      "group": "Configurations"
+    },
+    "animationIn": {
+      "type": "dropdown",
+      "label": "In Animation:",
+      "value": "animate__bounceIn",
+      "options": {
+        "none": "None",
+        "animate__bounceIn": "bounceIn",
+        "animate__bounceInDown": "bounceInDown",
+        "animate__bounceInLeft": "bounceInLeft",
+        "animate__bounceInRight": "bounceInRight",
+        "animate__bounceInUp": "bounceInUp",
+        "animate__fadeIn": "fadeIn",
+        "animate__fadeInDown": "fadeInDown",
+        "animate__fadeInDownBig": "fadeInDownBig",
+        "animate__fadeInLeft": "fadeInLeft",
+        "animate__fadeInLeftBig": "fadeInLeftBig",
+        "animate__fadeInRight": "fadeInRight",
+        "animate__fadeInRightBig": "fadeInRightBig",
+        "animate__fadeInUp": "fadeInUp",
+        "animate__fadeInUpBig": "fadeInUpBig",
+        "animate__flipInX": "flipInX",
+        "animate__flipInY": "flipInY",
+        "animate__lightSpeedIn": "lightSpeedIn",
+        "animate__rotateIn": "rotateIn",
+        "animate__rotateInDownLeft": "rotateInDownLeft",
+        "animate__rotateInDownRight": "rotateInDownRight",
+        "animate__rotateInUpLeft": "rotateInUpLeft",
+        "animate__rotateInUpRight": "rotateInUpRight",
+        "animate__slideInUp": "slideInUp",
+        "animate__slideInDown": "slideInDown",
+        "animate__slideInLeft": "slideInLeft",
+        "animate__slideInRight": "slideInRight",
+        "animate__zoomIn": "zoomIn",
+        "animate__zoomInDown": "zoomInDown",
+        "animate__zoomInLeft": "zoomInLeft",
+        "animate__zoomInRight": "zoomInRight",
+        "animate__zoomInUp": "zoomInUp",
+        "animate__jackInTheBox": "jackInTheBox",
+        "animate__rollIn": "rollIn"
+      },
+      "group": "Configurations"
+    },
+    "animationOut": {
+      "type": "dropdown",
+      "label": "Out Animation:",
+      "value": "none",
+      "options": {
+        "none": "None",
+        "animate__bounceOut": "bounceOut",
+        "animate__bounceOutDown": "bounceOutDown",
+        "animate__bounceOutLeft": "bounceOutLeft",
+        "animate__bounceOutRight": "bounceOutRight",
+        "animate__bounceOutUp": "bounceOutUp",
+        "animate__fadeOut": "fadeOut",
+        "animate__fadeOutDown": "fadeOutDown",
+        "animate__fadeOutDownBig": "fadeOutDownBig",
+        "animate__fadeOutLeft": "fadeOutLeft",
+        "animate__fadeOutLeftBig": "fadeOutLeftBig",
+        "animate__fadeOutRight": "fadeOutRight",
+        "animate__fadeOutRightBig": "fadeOutRightBig",
+        "animate__fadeOutUp": "fadeOutUp",
+        "animate__fadeOutUpBig": "fadeOutUpBig",
+        "animate__flipOutX": "flipOutX",
+        "animate__flipOutY": "flipOutY",
+        "animate__lightSpeedOut": "lightSpeedOut",
+        "animate__rotateOut": "rotateOut",
+        "animate__rotateOutDownLeft": "rotateOutDownLeft",
+        "animate__rotateOutDownRight": "rotateOutDownRight",
+        "animate__rotateOutUpLeft": "rotateOutUpLeft",
+        "animate__rotateOutUpRight": "rotateOutUpRight",
+        "animate__slideOutUp": "slideOutUp",
+        "animate__slideOutDown": "slideOutDown",
+        "animate__slideOutLeft": "slideOutLeft",
+        "animate__slideOutRight": "slideOutRight",
+        "animate__zoomOut": "zoomOut",
+        "animate__zoomOutDown": "zoomOutDown",
+        "animate__zoomOutLeft": "zoomOutLeft",
+        "animate__zoomOutRight": "zoomOutRight",
+        "animate__zoomOutUp": "zoomOutUp",
+        "animate__rollOut": "rollOut"
+      },
+      "group": "Configurations"
+    },  
+    "widgetName": {
+      "type": "hidden",
+      "value": "Custom Chat",
+      "group": "Configurations"
+    },
+    "widgetAuthor": {
+      "type": "hidden",
+      "value": "NaoPhantomX",
+      "group": "Configurations"
+    },
+    "widgetVersion": {
+      "type": "hidden",
+      "value": "2.0.0",
+      "group": "Configurations"
+    },
+    "widgetUpdateUrl": {
+      "type": "hidden",
+      "value": "https://github.com/NotPhantomX/stream-elements-widgets/blob/main/CustomChat/",
+      "group": "Configurations"
+    }
   }
-}
